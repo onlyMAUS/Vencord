@@ -14,7 +14,7 @@ export default definePlugin({
             patcher.after(MessageTimestamp, "default", (_, res) => {
                 if (res?.props?.timestamp) {
                     // Il formato richiesto: %d %m %y | %H : %M : %S
-                    res.props.timestamp = res.props.timestamp.format("DD MM YY | HH : mm : ss");
+                    res.props.timestamp = res.props.timestamp.format("DD - MM - YY | HH : mm : ss");
                 }
             });
         }
