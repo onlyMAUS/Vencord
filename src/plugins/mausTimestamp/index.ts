@@ -1,5 +1,5 @@
-import { definePlugin } from "../../../src/api/plugins";
-import { patcher, webpack } from "../../../src/api";
+import { definePlugin } from "../../api/plugins";
+import { patcher, webpack } from "../../api";
 
 export default definePlugin({
     name: "MausTimestamp",
